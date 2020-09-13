@@ -45,6 +45,12 @@
     margin-bottom: 1rem;
   }
 
+  .see-more {
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
   @media screen and (max-width: 1080px) {
     .flex {
       grid-template-columns: 1fr 1fr;
@@ -84,7 +90,7 @@
       {/if}
     {/each}
 
-    <a class="see-more" href={$url('/work')}>See all work</a>
+    <a class="button see-more" href={$url('/work')}>See all work</a>
   </section>
 
   <section style="grid-area: projects">
@@ -105,7 +111,7 @@
     {/each}
 
     <a
-      class="see-more"
+      class="button see-more"
       href="https://github.com/goranalkovic"
       rel="noreferrer"
       target="_blank">See more on GitHub</a>
@@ -130,7 +136,7 @@
       {/if}
     {/each}
 
-    <a class="see-more" href={$url('/cv')}>See complete CV</a>
+    <a class="button see-more" href={$url('/cv')}>Read my CV</a>
   </section>
 
   <section style="grid-area: contact">

@@ -2,6 +2,7 @@
   import { url, isActive } from "@sveltech/routify";
   import TestTransition from "../components/TestTransition.svelte";
   import { writable } from "svelte/store";
+  import TabsTransition from "@sveltech/routify/runtime/decorators/TabsTransition.svelte";
   const width = writable();
 </script>
 

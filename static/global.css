@@ -125,10 +125,6 @@ a:visited {
 	color: var(--text);
 }
 
-section a.see-more {
-	margin-top: auto;
-}
-
 p.item .item-title {
 	display: inline-block;
 	font-weight: 600;

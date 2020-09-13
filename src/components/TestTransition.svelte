@@ -16,8 +16,9 @@
       // Main-level items
       condition: ({ routes }) => {
         if (
-          (routes[0].file == "index.svelte" || routes[0].file == "cv.svelte") &&
-          (routes[1].file == "index.svelte" || routes[1].file == "cv.svelte")
+          (routes[0].file === "index.svelte" ||
+            routes[0].file === "cv.svelte") &&
+          (routes[1].file === "index.svelte" || routes[1].file === "cv.svelte")
         ) {
           return true;
         }
@@ -30,8 +31,8 @@
       // Main-level items to lower level
       condition: ({ routes }) => {
         if (
-          routes[0].file == "[id].svelte" &&
-          (routes[1].file == "index.svelte" || routes[1].file == "cv.svelte")
+          routes[0].file === "[id].svelte" &&
+          (routes[1].file === "index.svelte" || routes[1].file === "cv.svelte")
         ) {
           return true;
         }
@@ -44,8 +45,8 @@
       // Lower level to main-level
       condition: ({ routes }) => {
         if (
-          routes[1].file == "[id].svelte" &&
-          (routes[0].file == "index.svelte" || routes[1].file == "cv.svelte")
+          routes[1].file === "[id].svelte" &&
+          (routes[0].file === "index.svelte" || routes[1].file === "cv.svelte")
         ) {
           return true;
         }

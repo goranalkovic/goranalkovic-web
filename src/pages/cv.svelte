@@ -51,6 +51,19 @@
 
 <h1>Résumé</h1>
 
+<div
+  style="display: flex; margin: 1rem 0 4rem 0; align-items: baseline; justify-content: flex-start;">
+  <a
+    class="button"
+    style="margin: 0;"
+    href="/files/Goran-Alkovic-Full-CV.pdf"
+    target="_blank">Download CV <small style="opacity: 0.4; margin-left: 0.2rem; display: inline-block; font-size: 90%">PDF</small></a>
+  <a
+    style="margin: 0; margin-left: 1rem; color: var(--muted)"
+    href="/files/Goran-Alkovic-Quick-CV.pdf"
+    target="_blank">Download short CV <small style="opacity: 0.4; margin-left: 0.2rem; display: inline-block; font-size: 90%">PDF</small></a>
+</div>
+
 <section>
   <h2 style="margin-top: 0">Contact</h2>
   <p class="item">
@@ -117,7 +130,7 @@
 </section>
 
 <section class="cv-block">
-  <h2>Awards and certificates</h2>
+  <h2>Awards &amp; certificates</h2>
   <ul>
     {#each $certsAndAwards as cert}
       <li>

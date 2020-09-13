@@ -39,7 +39,7 @@ export const projects = readable([
 
 export const work = readable([
     {
-        when: "July 2020 - now",
+        when: "July 2020 –",
         who: "Arbona",
         what: "Digital designer",
         summary: "I'm working on designing online advertising materials, setting up dynamic ads and great-looking newsletters",
@@ -51,13 +51,13 @@ export const work = readable([
     {
         when: "March - April 2020",
         who: "SocialByte",
-        what: "Branding and a Wordpress website",
-        summary: "I designed a logo system for the agency, then set up a Wordpress website, customized it, added custom content and did some basic SEO",
+        what: "Branding and a WordPress website",
+        summary: "I designed a logo system for the agency, then set up a WordPress website, customized it, added custom content and did some basic SEO",
         featured: true,
         url: "https://socialbyte.agency/",
         slug: "socialbyte",
         type: "Website, branding",
-        technologies: "Adobe Xd/Ai, Wordpress",
+        technologies: "Adobe Xd/Ai, WordPress",
         images: [
             {
                 src: "img/projects/socialbyte/1.jpg",
@@ -131,7 +131,7 @@ export const work = readable([
         when: "December 2018 - May 2019",
         who: "STEM Games 2019",
         what: "Lead designer",
-        summary: "I lead the design team and designed promotional materials, the event map, banners, accrediations, etc.",
+        summary: "I lead the design team and designed promotional materials: the event map, banners, accreditations, etc.",
         featured: true,
         url: "https://stemgames.hr",
         slug: "stemgames-2019",
@@ -259,7 +259,7 @@ export const work = readable([
     {
         when: "October 2018",
         who: "Brucošijada grada Varaždina 2018.",
-        what: "Branding, promotional materials and accrediation design",
+        what: "Branding, promotional materials and accreditation design",
         summary: "I used Adobe Photoshop and Illustrator to create a logo, then designed all the promotional materials and designed accrediations",
         url: null,
         slug: "brucosijada-2018",
@@ -351,11 +351,11 @@ export const work = readable([
     {
         when: "August - September 2018",
         who: "Dose of sharks",
-        what: "Branding and a Wordpress website",
+        what: "Branding and a WordPress website",
         summary: "I made a logo and a basic design system, then set up and designed a website that also used WooCommerce",
         url: null,
         type: "Website, branding",
-        technologies: "Adobe Illustrator, Wordpress",
+        technologies: "Adobe Illustrator, WordPress",
         slug: "dose-of-sharks",
         images: [
             {
@@ -375,7 +375,7 @@ export const work = readable([
     {
         when: "April - July 2017",
         who: "Kaufland Varaždin",
-        what: "Student job - groecery store",
+        what: "Student job - grocery store",
         summary: "I worked in the store warehouse, distributed items to their appropriate locations in the store",
         type: "Work",
         technologies: "-",
@@ -393,12 +393,12 @@ export const work = readable([
     {
         when: "July 2017 - July 2019",
         who: "HipOcean",
-        what: "Branding, Wordpress website and t-shirt design, website maintenance",
-        summary: "I made a logo, a basic design system and couple of t-shirt designs in Adobe Illustrator, then set up a Wordpress website with WooCommerce. I maintained the website until July 2019.",
+        what: "Branding, WordPress website and t-shirt design, website maintenance",
+        summary: "I made a logo, a basic design system and couple of t-shirt designs in Adobe Illustrator, then set up a WordPress website with WooCommerce. I maintained the website until July 2019.",
         url: null,
         slug: "hip-ocean",
         type: "Branding, website",
-        technologies: "Adobe Ps/Ai, Wordpress",
+        technologies: "Adobe Ps/Ai, WordPress",
         images: [
             {
                 src: "img/projects/hipOcean/2.jpg",
@@ -423,7 +423,7 @@ export const work = readable([
         ]
     },
     {
-        when: "2016 - 2017",
+        when: "2016 – 2017",
         who: "FOI Career week",
         what: "Part of the Organization team",
         summary: "I worked in the Organization team, supporting all the event activities",
@@ -432,7 +432,7 @@ export const work = readable([
         slug: "foi-career-week"
     },
     {
-        when: "2016 - now",
+        when: "2016 –",
         who: "Temple Bar Stubičke Toplice",
         what: "Promotional materials design",
         summary: "I used Adobe Photoshop, Adobe Illustrator and Adobe Xd to design various promotional materials for Temple Bar",
@@ -441,7 +441,7 @@ export const work = readable([
         slug: "temple-bar"
     },
     {
-        when: "2016 - now",
+        when: "2016 – ",
         who: "St@k - FOI student magazine",
         what: "Magazine and promotional materials design, lead designer",
         summary: "Working in a team I improved my coworking skills. Magazine design was done in Adobe InDesign, together with Adobe Photoshop and Adobe Illustrator for supporting materials. Adobe Xd was used for some promotional materials.",
@@ -503,7 +503,7 @@ export const work = readable([
         what: "Personal website",
         summary: "I used Worpdress to make a personal website for a friend",
         type: "Website",
-        technologies: "Wordpress",
+        technologies: "WordPress",
         slug: "bruno-basic-web"
     },
     {
@@ -522,16 +522,16 @@ export const skills = readable(
         {
             name: "Web dev",
             description: [
-                "I know my way around <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> (ES6). <a href='https://svelte.dev' target='_blank' rel='noreferrer'><b>Svelte</b></a> is my favorite JS framework, but I find <a href='https://blazor.net' target='_blank' rel='noreferrer'><b>Blazor</b></a> (C#) also pretty interesting. Besides that, I know some <i>vanilla</i> <b>PHP</b> and <b>NodeJS</b>, but nothing too complex.",
-                "<b>Wordpress</b> is my favorite tool for making good websites that are easy to manage. I can set up the website, customize it to client's liking, manage plugins, do some basic SEO optimization."
+                "I know my way around <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> (ES6). <a href='https://svelte.dev' target='_blank' rel='noreferrer'><b>Svelte</b></a> is my favorite JS framework, but I find <a href='https://blazor.net' target='_blank' rel='noreferrer'><b>Blazor</b></a> (C#) also interesting. Besides that, I know some <i>vanilla</i> <b>PHP</b> and <b>NodeJS</b>, but nothing too complex.",
+                "<b>WordPress</b> is my favorite tool for making good websites that are easy to manage. I can set up the website, customize it to client's liking, manage plugins, do some basic SEO optimization."
             ],
-            shortDescription: "HTML/CSS/JS, Svelte, Wordpress, Blazor, basic PHP & NodeJS",
+            shortDescription: "HTML/CSS/JS, Svelte, WordPress, Blazor, basic PHP & NodeJS",
             shownInQuick: true
         },
         {
             name: "Design and creative",
             description: [
-                "<b>Print, logo and UI/UX design</b> are things i <b>love</b> doing. I use the <b>Adobe</b> suite (Photoshop, Illustrator, InDesign, Xd) and <b>Figma</b>.",
+                "<b>Print, logo and UI/UX design</b> are things I <b>love</b> doing. I use the <b>Adobe suite</b> (Photoshop, Illustrator, InDesign, Xd) and <b>Figma</b>.",
                 "I can also do some <b>basic video and audio editing</b> in Adobe Audition and Adobe After Effects."
             ],
             shortDescription: "Print, logo, UI/UX design (Ps, Ai, Id, Xd, Figma)",
