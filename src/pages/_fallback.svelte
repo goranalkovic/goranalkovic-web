@@ -21,6 +21,6 @@
   <div class="big">
     Page not found. <br />
     <br />
-    <a href={$url('.')}>Go Home</a>
+    <a href={$url('/')}>Go Home</a>
   </div>
 </div>

@@ -52,19 +52,24 @@
     <br />
     <a
       class="item-description"
+      target="_self"
       href="mailto:contact@goranalkovic.com">contact@goranalkovic.com</a>
   </p>
   <p class="item">
     <span class="item-title">Phone</span>
     <br />
-    <a href="tel:+385976480800" class="item-description">
+    <a href="tel:+385976480800" target="_self" class="item-description">
       <span style="opacity: 0.6">+385</span> 97 6480 800</a>
   </p>
 
   <p class="item">
     <span class="item-title">GitHub</span>
     <br />
-    <a href="https://github.com/goranalkovic" class="item-description">
+    <a
+      href="https://github.com/goranalkovic"
+      rel="noreferrer"
+      target="_blank"
+      class="item-description">
       <span style="opacity: 0.6">github.com/</span>goranalkovic
     </a>
   </p>

@@ -3,6 +3,7 @@
   import { metatags, url } from "@sveltech/routify";
   import SkeletonLoader from "../components/skeleton-loader.svelte";
   metatags.title = "Goran Alković - designer & developer";
+  metatags.description = "Personal website of Goran Alković";
 </script>
 
 <style>
@@ -106,6 +107,7 @@
     <a
       class="see-more"
       href="https://github.com/goranalkovic"
+      rel="noreferrer"
       target="_blank">See more on GitHub</a>
   </section>
 
@@ -139,19 +141,24 @@
       <br />
       <a
         class="item-description"
-        href="mailto:contact@goranalkovic.com">contact@goranalkovic.com</a>
+        href="mailto:contact@goranalkovic.com"
+        target="_self">contact@goranalkovic.com</a>
     </p>
     <p class="item">
       <span class="item-title">Phone</span>
       <br />
-      <a href="tel:+385976480800" class="item-description">
+      <a href="tel:+385976480800" target="_self" class="item-description">
         <span style="opacity: 0.6">+385</span> 97 6480 800</a>
     </p>
 
     <p class="item">
       <span class="item-title">GitHub</span>
       <br />
-      <a href="https://github.com/goranalkovic" class="item-description">
+      <a
+        href="https://github.com/goranalkovic"
+        target="_blank"
+        rel="noreferrer"
+        class="item-description">
         <span style="opacity: 0.6">github.com/</span>goranalkovic
       </a>
     </p>

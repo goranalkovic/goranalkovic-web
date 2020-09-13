@@ -155,3 +155,47 @@ p.item .item-description {
 		background-image: url('/images/bg-dark.svg');
 	}
 }
+
+/* 
+::-webkit-scrollbar {
+	width: 6px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--border-subtle);
+	border: none;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: var(--text);
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+	padding: 2px;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+	background: var(--border-subtle);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+} */

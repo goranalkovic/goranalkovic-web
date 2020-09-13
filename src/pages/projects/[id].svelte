@@ -73,39 +73,45 @@
   }
 </style>
 
-<h1>{project.name}</h1>
-<p class="description">{project.description}</p>
-<div class="flex">
-  <div>
-    <p class="item">
-      <span class="item-title">Year</span>
-      <br />
-      <span class="item-description">{project.year}</span>
-    </p>
-    <p class="item">
-      <span class="item-title">Type</span>
-      <br />
-      <span class="item-description">{project.type}</span>
-    </p>
+{#if project != null}
+  <h1>{project.name}</h1>
+  <p class="description">{project.description}</p>
+  <div class="flex">
+    <div>
+      <p class="item">
+        <span class="item-title">Year</span>
+        <br />
+        <span class="item-description">{project.year}</span>
+      </p>
+      <p class="item">
+        <span class="item-title">Type</span>
+        <br />
+        <span class="item-description">{project.type}</span>
+      </p>
 
-    <p class="item">
-      <span class="item-title">Technologies</span>
-      <br />
-      <span class="item-description">{project.technologies}</span>
-    </p>
+      <p class="item">
+        <span class="item-title">Technologies</span>
+        <br />
+        <span class="item-description">{project.technologies}</span>
+      </p>
+    </div>
+
+    <div class="actions">
+      {#if project.githubUrl != null}
+        <a href={project.githubUrl} rel="noreferrer" target="_blank">GitHub</a>
+      {/if}
+
+      {#if project.url != null}
+        <a href={project.url} target="_blank">Open</a>
+      {/if}
+    </div>
   </div>
 
-  <div class="actions">
-    {#if project.githubUrl != null}
-      <a href={project.githubUrl} target="_blank">GitHub</a>
-    {/if}
-
-    {#if project.url != null}<a href={project.url} target="_blank">Open</a>{/if}
-  </div>
-</div>
-
-<div class="gallery">
-  {#each project.images as image, i}
-    <img src="/{image.src.replace('img', 'images')}" alt={image.subHtml} />
-  {/each}
-</div>
+  {#if project.images != null}
+    <div class="gallery">
+      {#each project.images as image, i}
+        <img src="/{image.src.replace('img', 'images')}" alt={image.subHtml} />
+      {/each}
+    </div>
+  {/if}
+{/if}

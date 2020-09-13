@@ -99,15 +99,15 @@
 
 <main class="grid">
   <header>
-    <a href={$url('.')}>
+    <a href={$url('/')}>
       <h1>Goran Alković</h1>
     </a>
     <span>Designer & developer</span>
   </header>
 
   <nav>
-    <a href={$url('.')} class:active={$isActive('./index')}>Home</a>
-    <a href={$url('/cv')} class:active={$isActive('./cv')}>CV</a>
+    <a href={$url('/')} class:active={$isActive('/index')}>Home</a>
+    <a href={$url('/cv')} class:active={$isActive('/cv')}>CV</a>
     <a
       href={$url('/projects')}
       class:active={$isActive('/projects')}>Projects</a>
@@ -121,10 +121,10 @@
   <footer>
     <p>
       Copyright Goran Alković, 2020 <br />
-      <small>Made with <a href="https://svelte.dev" target="_blank">Svelte</a>,
-        hosted on <a
-          href="https://netlify.com"
-          target="_blank">Netlify</a></small>
+      <small>Made with <a
+          href="https://svelte.dev"
+          target="_blank"
+          rel="noreferrer">Svelte</a>, hosted on <a href="https://netlify.com" rel="noreferrer" target="_blank">Netlify</a></small>
     </p>
   </footer>
 </main>

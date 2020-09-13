@@ -30,7 +30,7 @@ export const projects = readable([
         type: "Hybrid application",
         images: [
             {
-                src: "img/projects/simplePiano/1.jpg",
+                src: "img/projects/covid19hr/1.jpg",
                 subHtml: "Main page"
             }
         ]
