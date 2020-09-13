@@ -101,6 +101,7 @@
   }
 </style>
 
+<!-- routify:options bundle=true -->
 <main class="grid">
   <header>
     <a class="name" href={$url('/')}> Goran Alković </a>
