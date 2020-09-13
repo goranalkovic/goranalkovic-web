@@ -1,67 +1,49 @@
-/* dm-sans-regular - latin-ext_latin */
-
 @font-face {
 	font-family: 'DM Sans';
 	font-style: normal;
+	font-display: swap;
 	font-weight: 400;
-	src: local('DM Sans Regular'), local('DMSans-Regular'), url('/fonts/dm-sans-v5-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('/fonts/dm-sans-v5-latin-ext_latin-regular.woff') format('woff');
-	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	src: local('DM Sans Regular'), local('DMSans-Regular'), url('/fonts/dm-sans-v5-latin-ext_latin-regular.woff2') format('woff2'), url('/fonts/dm-sans-v5-latin-ext_latin-regular.woff') format('woff');
 }
-
-/* dm-sans-italic - latin-ext_latin */
 
 @font-face {
 	font-family: 'DM Sans';
 	font-style: italic;
+	font-display: swap;
 	font-weight: 400;
-	src: local('DM Sans Italic'), local('DMSans-Italic'), url('/fonts/dm-sans-v5-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('/fonts/dm-sans-v5-latin-ext_latin-italic.woff') format('woff');
-	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	src: local('DM Sans Italic'), local('DMSans-Italic'), url('/fonts/dm-sans-v5-latin-ext_latin-italic.woff2') format('woff2'), url('/fonts/dm-sans-v5-latin-ext_latin-italic.woff') format('woff');
 }
-
-/* dm-sans-700 - latin-ext_latin */
 
 @font-face {
 	font-family: 'DM Sans';
 	font-style: normal;
+	font-display: swap;
 	font-weight: 700;
-	src: local('DM Sans Bold'), local('DMSans-Bold'), url('/fonts/dm-sans-v5-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('/fonts/dm-sans-v5-latin-ext_latin-700.woff') format('woff');
-	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	src: local('DM Sans Bold'), local('DMSans-Bold'), url('/fonts/dm-sans-v5-latin-ext_latin-700.woff2') format('woff2'), url('/fonts/dm-sans-v5-latin-ext_latin-700.woff') format('woff');
 }
-
-/* dm-sans-700italic - latin-ext_latin */
 
 @font-face {
 	font-family: 'DM Sans';
 	font-style: italic;
+	font-display: swap;
 	font-weight: 700;
-	src: local('DM Sans Bold Italic'), local('DMSans-BoldItalic'), url('/fonts/dm-sans-v5-latin-ext_latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('/fonts/dm-sans-v5-latin-ext_latin-700italic.woff') format('woff');
-	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	src: local('DM Sans Bold Italic'), local('DMSans-BoldItalic'), url('/fonts/dm-sans-v5-latin-ext_latin-700italic.woff2') format('woff2'), url('/fonts/dm-sans-v5-latin-ext_latin-700italic.woff') format('woff');
 }
-
-/* dm-serif-text-regular - latin-ext_latin */
 
 @font-face {
 	font-family: 'DM Serif Text';
 	font-style: normal;
+	font-display: swap;
 	font-weight: 400;
-	src: local('DM Serif Text Regular'), local('DMSerifText-Regular'), url('/fonts/dm-serif-text-v4-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('/fonts/dm-serif-text-v4-latin-ext_latin-regular.woff') format('woff');
-	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	src: local('DM Serif Text Regular'), local('DMSerifText-Regular'), url('/fonts/dm-serif-text-v4-latin-ext_latin-regular.woff2') format('woff2'), url('/fonts/dm-serif-text-v4-latin-ext_latin-regular.woff') format('woff');
 }
-
-/* dm-serif-text-italic - latin-ext_latin */
 
 @font-face {
 	font-family: 'DM Serif Text';
 	font-style: italic;
+	font-display: swap;
 	font-weight: 400;
-	src: local('DM Serif Text Italic'), local('DMSerifText-Italic'), url('/fonts/dm-serif-text-v4-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('/fonts/dm-serif-text-v4-latin-ext_latin-italic.woff') format('woff');
-	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	src: local('DM Serif Text Italic'), local('DMSerifText-Italic'), url('/fonts/dm-serif-text-v4-latin-ext_latin-italic.woff2') format('woff2'), url('/fonts/dm-serif-text-v4-latin-ext_latin-italic.woff') format('woff');
 }
 
 html {
