@@ -1,22 +1,8 @@
 <script>
+  import { projects, work, skills } from "../stores.js";
   import { metatags, url } from "@sveltech/routify";
   import SkeletonLoader from "../components/skeleton-loader.svelte";
   metatags.title = "Goran Alković - designer & developer";
-  metatags.description = "Description coming soon...";
-
-  async function loadProjects() {
-    let response = await fetch(
-      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/projects.json"
-    );
-    return response.json();
-  }
-
-  async function loadCv() {
-    let response = await fetch(
-      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/cv.json"
-    );
-    return response.json();
-  }
 </script>
 
 <style>
@@ -83,56 +69,44 @@
   <section style="grid-area: work">
     <h2>Work</h2>
 
-    {#await loadCv()}
-      <SkeletonLoader />
-    {:then cv}
-      {#each cv.work as project, i (i)}
-        {#if project.featured == true}
-          <p class="item">
-            {#if project.slug != null}
-              <a
-                class="item-title"
-                href={$url('/work/:id', { id: project.slug })}>{project.who}</a>
-            {:else}<span class="item-title">{project.who}</span>{/if}
-            <br />
-            <span class="item-description">{@html project.what}</span>
-          </p>
-        {/if}
-      {/each}
+    {#each $work as project, i (i)}
+      {#if project.featured == true}
+        <p class="item">
+          {#if project.slug != null}
+            <a
+              class="item-title"
+              href={$url('/work/:id', { id: project.slug })}>{project.who}</a>
+          {:else}<span class="item-title">{project.who}</span>{/if}
+          <br />
+          <span class="item-description">{@html project.what}</span>
+        </p>
+      {/if}
+    {/each}
 
-      <a class="see-more" href={$url('/work')}>See all work</a>
-    {:catch error}
-      Error: {error}
-    {/await}
+    <a class="see-more" href={$url('/work')}>See all work</a>
   </section>
 
   <section style="grid-area: projects">
     <h2>Personal projects</h2>
 
-    {#await loadProjects()}
-      <SkeletonLoader />
-    {:then projects}
-      {#each projects as project, i (i)}
-        {#if project.featured == true}
-          <p class="item">
-            <a
-              class="item-title"
-              href={$url('/projects/:id', {
-                id: project.slug,
-              })}>{project.name}</a>
-            <br />
-            <span class="item-description">{@html project.description}</span>
-          </p>
-        {/if}
-      {/each}
+    {#each $projects as project, i (i)}
+      {#if project.featured == true}
+        <p class="item">
+          <a
+            class="item-title"
+            href={$url('/projects/:id', {
+              id: project.slug,
+            })}>{project.name}</a>
+          <br />
+          <span class="item-description">{@html project.description}</span>
+        </p>
+      {/if}
+    {/each}
 
-      <a
-        class="see-more"
-        href="https://github.com/goranalkovic"
-        target="_blank">See more on GitHub</a>
-    {:catch error}
-      Error: {error}
-    {/await}
+    <a
+      class="see-more"
+      href="https://github.com/goranalkovic"
+      target="_blank">See more on GitHub</a>
   </section>
 
   <section class="about-me" style="grid-area: about">
@@ -143,24 +117,18 @@
   <section style="grid-area: cv">
     <h2>Skills TL;DR</h2>
 
-    {#await loadCv()}
-      <SkeletonLoader />
-    {:then cv}
-      {#each cv.skills as skill, i (i)}
-        {#if skill.shownInQuick == true}
-          <p class="item">
-            <span class="item-title">{skill.name} </span>
-            <br />
-            <span
-              class="skill-item-description item-description">{@html skill.shortDescription}</span>
-          </p>
-        {/if}
-      {/each}
+    {#each $skills as skill, i (i)}
+      {#if skill.shownInQuick == true}
+        <p class="item">
+          <span class="item-title">{skill.name} </span>
+          <br />
+          <span
+            class="skill-item-description item-description">{@html skill.shortDescription}</span>
+        </p>
+      {/if}
+    {/each}
 
-      <a class="see-more" href={$url('/cv')}>See complete CV</a>
-    {:catch error}
-      Error: {error}
-    {/await}
+    <a class="see-more" href={$url('/cv')}>See complete CV</a>
   </section>
 
   <section style="grid-area: contact">

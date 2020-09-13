@@ -1,16 +1,8 @@
 <script>
-  import SkeletonLoader from "../../components/skeleton-loader.svelte";
-
+  import { work } from "../../stores.js";
   export let id;
 
-  async function loadCv() {
-    let response = await fetch(
-      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/cv.json"
-    );
-    let json = await response.json();
-
-    return json.work.filter((p) => p.slug === id)[0];
-  }
+  $: project = $work.filter((p) => p.slug === id)[0];
 </script>
 
 <style>
@@ -82,47 +74,39 @@
   }
 </style>
 
-{#await loadCv()}
-  <SkeletonLoader />
-{:then project}
-  <h1>{project.who}</h1>
-  <p class="description">{project.summary}</p>
-  <div class="flex">
-    <div>
-      <p class="item">
-        <span class="item-title">Timespan</span>
-        <br />
-        <span class="item-description">{project.when}</span>
-      </p>
-      <p class="item">
-        <span class="item-title">Category</span>
-        <br />
-        <span class="item-description">{project.type}</span>
-      </p>
+<h1>{project.who}</h1>
+<p class="description">{project.summary}</p>
+<div class="flex">
+  <div>
+    <p class="item">
+      <span class="item-title">Timespan</span>
+      <br />
+      <span class="item-description">{project.when}</span>
+    </p>
+    <p class="item">
+      <span class="item-title">Category</span>
+      <br />
+      <span class="item-description">{project.type}</span>
+    </p>
 
-      <p class="item">
-        <span class="item-title">Skills</span>
-        <br />
-        <span class="item-description">{project.technologies}</span>
-      </p>
-    </div>
-
-    <div class="actions">
-      {#if project.githubUrl != null}
-        <a href={project.githubUrl} target="_blank">GitHub</a>
-      {/if}
-
-      {#if project.url != null}
-        <a href={project.url} target="_blank">Open</a>
-      {/if}
-    </div>
+    <p class="item">
+      <span class="item-title">Skills</span>
+      <br />
+      <span class="item-description">{project.technologies}</span>
+    </p>
   </div>
 
-  <div class="gallery">
-    {#each project.images as image, i}
-      <img src="/{image.src.replace('img', 'images')}" alt={image.subHtml} />
-    {/each}
+  <div class="actions">
+    {#if project.githubUrl != null}
+      <a href={project.githubUrl} target="_blank">GitHub</a>
+    {/if}
+
+    {#if project.url != null}<a href={project.url} target="_blank">Open</a>{/if}
   </div>
-{:catch error}
-  Error: {error}
-{/await}
+</div>
+
+<div class="gallery">
+  {#each project.images as image, i}
+    <img src="/{image.src.replace('img', 'images')}" alt={image.subHtml} />
+  {/each}
+</div>
