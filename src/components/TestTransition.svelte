@@ -1,7 +1,9 @@
 <script>
-  import BaseTransition from "@sveltech/routify/runtime/decorators/BaseTransition.svelte";
-
+  import { BaseTransition } from "@sveltech/routify/decorators";
   import { scale, fly } from "svelte/transition";
+
+  export let scoped;
+  const { width } = scoped;
 
   let configs = [
     {

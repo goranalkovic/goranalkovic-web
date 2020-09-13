@@ -1,6 +1,8 @@
 <script>
   import { url, isActive } from "@sveltech/routify";
-  import TestTransition from "../components/test-transition.svelte";
+  import TestTransition from "../components/TestTransition.svelte";
+  import { writable } from "svelte/store";
+  const width = writable();
 </script>
 
 <style>
@@ -117,8 +119,8 @@
     <a href={$url('/work')} class:active={$isActive('/work')}>Work</a>
   </nav>
 
-  <div class="fullwidth">
-    <slot decorator={TestTransition} />
+  <div class="fullwidth" bind:offsetWidth={$width}>
+    <slot decorator={TestTransition} scoped={{ width }} />
   </div>
 
   <footer>
@@ -131,3 +133,5 @@
     </p>
   </footer>
 </main>
+
+<!-- routify:options bundle=true -->
