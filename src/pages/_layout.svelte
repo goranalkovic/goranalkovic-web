@@ -1,5 +1,10 @@
 <script>
   import { url, isActive } from "@sveltech/routify";
+  import { fade, slide, fly } from "svelte/transition";
+  import { writable } from "svelte/store";
+  import { TabsTransition } from "@sveltech/routify/decorators";
+  import TestTransition from "../components/test-transition.svelte";
+  const width = writable();
 </script>
 
 <style>
@@ -101,7 +106,6 @@
   }
 </style>
 
-<!-- routify:options bundle=true -->
 <main class="grid">
   <header>
     <a class="name" href={$url('/')}> Goran Alković </a>
@@ -117,8 +121,12 @@
     <a href={$url('/work')} class:active={$isActive('/work')}>Work</a>
   </nav>
 
+  <!-- <div class="fullwidth">
+    <slot transition={slide} />
+  </div> -->
+
   <div class="fullwidth">
-    <slot />
+    <slot decorator={TestTransition} />
   </div>
 
   <footer>

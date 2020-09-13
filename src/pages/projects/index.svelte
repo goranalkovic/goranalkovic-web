@@ -1,7 +1,6 @@
 <script>
   import { projects } from "../../stores.js";
   import { metatags, url } from "@sveltech/routify";
-  import SkeletonLoader from "../../components/skeleton-loader.svelte";
   metatags.title = "Goran Alković - projects";
 </script>
 
