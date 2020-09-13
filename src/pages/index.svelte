@@ -97,6 +97,8 @@
       {/each}
 
       <a class="see-more" href={$url('/work')}>See all work</a>
+    {:catch error}
+      Error: {error}
     {/await}
   </section>
 
@@ -124,6 +126,8 @@
         class="see-more"
         href="https://github.com/goranalkovic"
         target="_blank">See more on GitHub</a>
+    {:catch error}
+      Error: {error}
     {/await}
   </section>
 
@@ -150,6 +154,8 @@
       {/each}
 
       <a class="see-more" href={$url('/cv')}>See complete CV</a>
+    {:catch error}
+      Error: {error}
     {/await}
   </section>
 

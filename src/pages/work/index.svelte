@@ -25,4 +25,6 @@
       <span class="item-description">{@html project.what}</span>
     </p>
   {/each}
+{:catch error}
+  Error: {error}
 {/await}

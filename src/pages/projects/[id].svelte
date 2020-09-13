@@ -120,4 +120,6 @@
       <img src="/{image.src.replace('img', 'images')}" alt={image.subHtml} />
     {/each}
   </div>
+{:catch error}
+  Error: {error}
 {/await}
