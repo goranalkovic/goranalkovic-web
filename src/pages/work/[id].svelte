@@ -4,7 +4,9 @@
   export let id;
 
   async function loadCv() {
-    let response = await fetch("/files/cv.json");
+    let response = await fetch(
+      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/cv.json"
+    );
     let json = await response.json();
 
     return json.work.filter((p) => p.slug === id)[0];

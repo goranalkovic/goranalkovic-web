@@ -4,7 +4,9 @@
   export let id;
 
   async function loadProjects() {
-    let response = await fetch("/files/projects.json");
+    let response = await fetch(
+      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/projects.json"
+    );
     let json = await response.json();
 
     return json.filter((p) => p.slug === id)[0];

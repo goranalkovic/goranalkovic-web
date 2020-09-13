@@ -4,7 +4,9 @@
   metatags.title = "Goran Alković - CV";
 
   async function loadCv() {
-    let response = await fetch("files/cv.json");
+    let response = await fetch(
+      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/cv.json"
+    );
     return response.json();
   }
 </script>

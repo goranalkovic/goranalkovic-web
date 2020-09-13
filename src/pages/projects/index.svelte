@@ -4,7 +4,9 @@
   metatags.title = "Goran Alković - projects";
 
   async function loadProjects() {
-    let response = await fetch("files/projects.json");
+    let response = await fetch(
+      "https://raw.githubusercontent.com/goranalkovic/goranalkovic.github.io/master/projects.json"
+    );
     return response.json();
   }
 </script>
