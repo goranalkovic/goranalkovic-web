@@ -6,9 +6,6 @@
 </script>
 
 <style>
-  h1 {
-    margin-bottom: 3rem;
-  }
   h2 {
     font-size: 2.4rem;
     margin: 0;
