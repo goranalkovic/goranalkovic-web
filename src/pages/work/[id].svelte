@@ -34,17 +34,6 @@
     margin-right: 1rem;
   }
 
-  .actions a {
-    border: 1px solid var(--border-subtle);
-    padding: 6px 10px;
-    transition: 0.3s color, 0.3s background-color;
-    margin: 1rem 0;
-  }
-
-  .actions a:hover {
-    background: var(--border-subtle);
-  }
-
   .gallery {
     padding: 3rem 0;
   }
@@ -89,11 +78,19 @@
 
     <div class="actions">
       {#if project.githubUrl != null}
-        <a href={project.githubUrl} rel="noreferrer" target="_blank">GitHub</a>
+        <a
+          class="button"
+          href={project.githubUrl}
+          rel="noreferrer"
+          target="_blank">GitHub</a>
       {/if}
 
       {#if project.url != null}
-        <a href={project.url} rel="noreferrer" target="_blank">Open</a>
+        <a
+          class="button"
+          href={project.url}
+          rel="noreferrer"
+          target="_blank">Open</a>
       {/if}
     </div>
   </div>

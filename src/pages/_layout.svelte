@@ -90,7 +90,7 @@
   @media screen and (max-width: 740px) {
     .grid {
       grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto;
+      grid-template-rows: auto auto 1fr auto;
       grid-template-areas: "header" "nav" "content" "footer";
 
       height: 100%;

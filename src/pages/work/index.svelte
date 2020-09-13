@@ -4,6 +4,12 @@
   metatags.title = "Goran Alković - work";
 </script>
 
+<style>
+  p.item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+</style>
+
 <h1>Work</h1>
 
 {#each $work as project, i (i)}

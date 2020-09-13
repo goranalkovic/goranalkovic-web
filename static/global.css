@@ -141,6 +141,29 @@ p.item .item-description {
 	color: var(--muted);
 }
 
+button, .button {
+	border: 1px solid var(--border-subtle);
+	padding: 6px 10px;
+	transition: 0.3s color, 0.3s background-color;
+	margin: 1rem auto;
+	background-color: var(--background);
+	border-radius: 0;
+	color: var(--text);
+	font-family: var(--family-sans);
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+button:hover, .button:hover {
+	background: var(--border-subtle);
+	color: var(--accent);
+}
+
+button:disabled, .button:disabled {
+	color: var(--border-subtle);
+	background-color: var(--background);
+}
+
 @media screen and (min-width: 2000px) {
 	:root {
 		--side-padding: 26vw;

@@ -23,7 +23,7 @@
   .about-me {
     font-family: var(--family-serif);
     font-style: italic;
-    max-width: 18ch;
+    max-width: 17ch;
     font-size: 1.8rem;
     line-height: 120%;
   }
@@ -112,7 +112,7 @@
   </section>
 
   <section class="about-me" style="grid-area: about">
-    <p>I'm a developer and designer based in Varaždin, Croatia.</p>
+    <p>I'm a developer and a designer based in Varaždin, Croatia.</p>
     <p>I love making things that look good and work even better.</p>
   </section>
 

@@ -43,7 +43,8 @@ export const work = readable([
         who: "Arbona",
         what: "Digital designer",
         summary: "I'm working on designing online advertising materials, setting up dynamic ads and great-looking newsletters",
-        "featured": false,
+        featured: false,
+        slug: "arbona",
         type: "Digital marketing",
         technologies: "Adobe Xd/Ps/Ai, BannerSnack, MailChimp"
     },
@@ -52,12 +53,12 @@ export const work = readable([
         who: "SocialByte",
         what: "Branding and a Wordpress website",
         summary: "I designed a logo system for the agency, then set up a Wordpress website, customized it, added custom content and did some basic SEO",
-        "featured": true,
-        "url": "https://socialbyte.agency/",
-        "slug": "socialbyte",
+        featured: true,
+        url: "https://socialbyte.agency/",
+        slug: "socialbyte",
         type: "Website, branding",
         technologies: "Adobe Xd/Ai, Wordpress",
-        "images": [
+        images: [
             {
                 src: "img/projects/socialbyte/1.jpg",
                 subHtml: "Logo"
@@ -97,7 +98,8 @@ export const work = readable([
         who: "Ekobit",
         what: "Summer internship",
         summary: "I was a part of a team that worked on a company's project, used C# and SQL, learned a lot about optimizing SQL queries",
-        "featured": false,
+        featured: false,
+        slug: "ekobit",
         type: "Internship",
         technologies: "C#, SQL"
     },
@@ -106,11 +108,11 @@ export const work = readable([
         who: "Faculty of organization and informatics",
         what: "T-shirt, banner and promotional materials design for STEM Games 2019",
         summary: "I used Adobe Illustrator to create t-shirt and banner designs and did some promotional materials in Adobe Xd",
-        "url": null,
-        "slug": "foi-stemgames-2019",
+        url: null,
+        slug: "foi-stemgames-2019",
         type: "Design",
         technologies: "Adobe Xd/Ai",
-        "images": [
+        images: [
             {
                 src: "img/projects/foiSG2019/1.jpg",
                 subHtml: "T-shirts"
@@ -130,12 +132,12 @@ export const work = readable([
         who: "STEM Games 2019",
         what: "Lead designer",
         summary: "I lead the design team and designed promotional materials, the event map, banners, accrediations, etc.",
-        "featured": true,
-        "url": "https://stemgames.hr",
-        "slug": "stemgames-2019",
+        featured: true,
+        url: "https://stemgames.hr",
+        slug: "stemgames-2019",
         type: "Design, teamwork",
         technologies: "Adobe Xd/Ps/Ai",
-        "images": [
+        images: [
             {
                 src: "img/projects/stemGames2019/1.jpg",
                 subHtml: "Facebook event cover"
@@ -203,11 +205,11 @@ export const work = readable([
         who: "Aronija Juraj",
         what: "Branding and bottle label design",
         summary: "I designed a logo, a simple brand system and bottle labels for <i>Aronija Juraj</i>",
-        "url": null,
+        url: null,
         type: "Design",
         technologies: "Adobe Illustrator",
-        "slug": "aronija-juraj",
-        "images": [
+        slug: "aronija-juraj",
+        images: [
             {
                 src: "img/projects/aronijaJuraj/1.jpg",
                 subHtml: "Logo"
@@ -227,11 +229,11 @@ export const work = readable([
         who: "Mladi pomažu - student humanitarian action",
         what: "Branding and promotional materials",
         summary: "I used Adobe Illustrator to create a logo and promotional materials for the event",
-        "url": null,
-        "slug": "mladi-pomazu",
+        url: null,
+        slug: "mladi-pomazu",
         type: "Design",
         technologies: "Adobe Ps/Ai",
-        "images": [
+        images: [
             {
                 src: "img/projects/mladiPomazu/5.jpg",
                 subHtml: "Logo"
@@ -259,11 +261,11 @@ export const work = readable([
         who: "Brucošijada grada Varaždina 2018.",
         what: "Branding, promotional materials and accrediation design",
         summary: "I used Adobe Photoshop and Illustrator to create a logo, then designed all the promotional materials and designed accrediations",
-        "url": null,
-        "slug": "brucosijada-2018",
+        url: null,
+        slug: "brucosijada-2018",
         type: "Design",
         technologies: "Adobe Ps/Ai",
-        "images": [
+        images: [
             {
                 src: "img/projects/brucosijada2018/5.jpg",
                 subHtml: "Event poster"
@@ -295,11 +297,11 @@ export const work = readable([
         who: "Faculty of organization and informatics",
         what: "T-shirt, banner and promotional materials design for STEM Games 2018",
         summary: "I used Adobe Illustrator to create t-shirt, banner designs and promotional materials",
-        "url": null,
-        "slug": "foi-stemgames-2018",
+        url: null,
+        slug: "foi-stemgames-2018",
         type: "Design",
         technologies: "Adobe Illustrator",
-        "images": [
+        images: [
             {
                 src: "img/projects/foiSG2018/1.jpg",
                 subHtml: "T-shirts"
@@ -319,11 +321,11 @@ export const work = readable([
         who: "Student council FOI",
         what: "Member",
         summary: "I was a part of the Faculty of organization and informatics' Student council, worked on various projects and worked in a team",
-        "url": null,
+        url: null,
         type: "Social, design",
         technologies: "Adobe Xd/Ps/Ai",
-        "slug": "foi-student-council",
-        "images": [
+        slug: "foi-student-council",
+        images: [
             {
                 src: "img/projects/szfoi/5.jpg",
                 subHtml: "Promotional poster"
@@ -351,11 +353,11 @@ export const work = readable([
         who: "Dose of sharks",
         what: "Branding and a Wordpress website",
         summary: "I made a logo and a basic design system, then set up and designed a website that also used WooCommerce",
-        "url": null,
+        url: null,
         type: "Website, branding",
         technologies: "Adobe Illustrator, Wordpress",
-        "slug": "dose-of-sharks",
-        "images": [
+        slug: "dose-of-sharks",
+        images: [
             {
                 src: "img/projects/doseOfSharks/2.jpg",
                 subHtml: "Logo"
@@ -376,7 +378,8 @@ export const work = readable([
         what: "Student job - groecery store",
         summary: "I worked in the store warehouse, distributed items to their appropriate locations in the store",
         type: "Work",
-        technologies: "-"
+        technologies: "-",
+        slug: "kaufland-vz"
     },
     {
         when: "March 2017 - November 2018",
@@ -384,18 +387,19 @@ export const work = readable([
         what: "UpWork",
         summary: "I did graphic design work for a client using Adobe InDesign and Adobe Illustrator",
         type: "Freelance",
-        technologies: "Adobe Id/Ai"
+        technologies: "Adobe Id/Ai",
+        slug: "upwork"
     },
     {
         when: "July 2017 - July 2019",
         who: "HipOcean",
         what: "Branding, Wordpress website and t-shirt design, website maintenance",
         summary: "I made a logo, a basic design system and couple of t-shirt designs in Adobe Illustrator, then set up a Wordpress website with WooCommerce. I maintained the website until July 2019.",
-        "url": null,
-        "slug": "hip-ocean",
+        url: null,
+        slug: "hip-ocean",
         type: "Branding, website",
         technologies: "Adobe Ps/Ai, Wordpress",
-        "images": [
+        images: [
             {
                 src: "img/projects/hipOcean/2.jpg",
                 subHtml: "Logo"
@@ -424,7 +428,8 @@ export const work = readable([
         what: "Part of the Organization team",
         summary: "I worked in the Organization team, supporting all the event activities",
         type: "Teamwork",
-        technologies: "-"
+        technologies: "-",
+        slug: "foi-career-week"
     },
     {
         when: "2016 - now",
@@ -432,19 +437,20 @@ export const work = readable([
         what: "Promotional materials design",
         summary: "I used Adobe Photoshop, Adobe Illustrator and Adobe Xd to design various promotional materials for Temple Bar",
         type: "Design",
-        technologies: "Adobe Xd/Ps/Ai"
+        technologies: "Adobe Xd/Ps/Ai",
+        slug: "temple-bar"
     },
     {
         when: "2016 - now",
         who: "St@k - FOI student magazine",
         what: "Magazine and promotional materials design, lead designer",
         summary: "Working in a team I improved my coworking skills. Magazine design was done in Adobe InDesign, together with Adobe Photoshop and Adobe Illustrator for supporting materials. Adobe Xd was used for some promotional materials.",
-        "featured": true,
-        "url": "https://issuu.com/foi.stak",
-        "slug": "stak",
+        featured: true,
+        url: "https://issuu.com/foi.stak",
+        slug: "stak",
         type: "Design, teamwork",
         technologies: "Adobe Ps/Ai/Xd",
-        "images": [
+        images: [
             {
                 src: "img/projects/stak/2.jpg",
                 subHtml: "Magazine cover design - St@k no. 20"
@@ -497,7 +503,8 @@ export const work = readable([
         what: "Personal website",
         summary: "I used Worpdress to make a personal website for a friend",
         type: "Website",
-        technologies: "Wordpress"
+        technologies: "Wordpress",
+        slug: "bruno-basic-web"
     },
     {
         when: "2011 - 2015",
@@ -505,7 +512,8 @@ export const work = readable([
         what: "Magazine design",
         summary: "I used Adobe InDesign to lay out the magazine and Adobe Photoshop and Adobe Illustrator for supporting materials.",
         type: "Design",
-        technologies: "Adobe Id/Ai"
+        technologies: "Adobe Id/Ai",
+        slug: "tehnicar"
     }
 ]);
 
