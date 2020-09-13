@@ -26,6 +26,7 @@
     font-style: italic;
     max-width: 18ch;
     font-size: 1.8rem;
+    line-height: 120%;
   }
 
   .about-me p {

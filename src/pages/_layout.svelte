@@ -23,7 +23,6 @@
     justify-content: center;
   }
 
-  header h1,
   header span {
     margin: 0.1rem 0;
   }
@@ -44,7 +43,7 @@
     font-size: 1.2rem;
     color: var(--muted);
     transition: 0.2s color;
-    font-weight: 100 !important;
+    font-weight: 400;
   }
 
   nav a:hover {

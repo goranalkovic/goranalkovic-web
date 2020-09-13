@@ -101,7 +101,10 @@
   {#if project.images != null}
     <div class="gallery">
       {#each project.images as image, i}
-        <img src="/{image.src.replace('img', 'images')}" alt={image.subHtml} />
+        <img
+          src="/{image.src.replace('img', 'images')}"
+          alt={image.subHtml}
+          loading="lazy" />
       {/each}
     </div>
   {/if}
