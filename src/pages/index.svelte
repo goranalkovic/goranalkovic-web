@@ -5,12 +5,12 @@
   metatags.description = "Description coming soon...";
 
   async function loadProjects() {
-    let response = await fetch("files/projects.json");
+    let response = await fetch("/files/projects.json");
     return response.json();
   }
 
   async function loadCv() {
-    let response = await fetch("files/cv.json");
+    let response = await fetch("/files/cv.json");
     return response.json();
   }
 </script>

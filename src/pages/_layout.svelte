@@ -99,7 +99,7 @@
 
 <main class="grid">
   <header>
-    <a href="/">
+    <a href={$url('.')}>
       <h1>Goran Alković</h1>
     </a>
     <span>Designer & developer</span>
