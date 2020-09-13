@@ -6,6 +6,12 @@
 </script>
 
 <style>
+  .title,
+  .details,
+  .subtitle {
+    max-width: 36vw;
+  }
+
   .when {
     color: var(--muted);
     margin: 0;
@@ -18,14 +24,12 @@
     margin: 0;
     padding: 0;
     font-size: 1.3rem;
-    max-width: 24ch;
   }
 
   .subtitle {
     margin: 0.2rem 0;
     padding: 0;
     font-size: 1.1rem;
-    max-width: 32ch;
   }
 
   .details {
@@ -33,7 +37,6 @@
     padding: 0;
     margin-top: 0.6rem;
     font-size: 0.95rem;
-    max-width: 40ch;
     line-height: 1.5;
     text-align: justify;
     text-align-last: left;
@@ -42,6 +45,23 @@
 
   :global(.details b) {
     color: var(--accent);
+    font-weight: normal;
+  }
+
+  @media screen and (max-width: 1080px) {
+    .title,
+    .details,
+    .subtitle {
+      max-width: 46vw;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .title,
+    .details,
+    .subtitle {
+      max-width: 100%;
+    }
   }
 </style>
 

@@ -6,19 +6,9 @@
 </script>
 
 <style>
-  h1 {
-    font-family: var(--family-serif);
-    font-weight: normal;
-    font-style: italic;
-    font-size: 4rem;
-    line-height: 100%;
-    margin: 0;
-    margin-bottom: 1rem;
-  }
-
   .description {
     font-size: 1.3rem;
-    max-width: 40ch;
+    max-width: 32ch;
   }
 
   .flex {

@@ -6,29 +6,24 @@
 </script>
 
 <style>
+  h1 {
+    margin-bottom: 3rem;
+  }
   h2 {
-    font-size: 2rem;
-    font-family: var(--family-sans);
+    font-size: 2.4rem;
     margin: 0;
-
-    color: var(--accent);
-
     margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    font-style: italic;
   }
 
   li {
-    margin: 2rem 0;
+    margin: 4rem 0;
   }
 
   li:first-of-type {
     margin-top: 1rem;
-  }
-
-  p,
-  span,
-  a,
-  h2 {
-    max-width: 44ch;
   }
 
   ul {
@@ -38,14 +33,28 @@
   }
 
   p {
-    line-height: 150%;
     font-size: 1rem;
     text-align: justify;
     text-align-last: left;
+    max-width: 36vw;
+  }
+
+  @media screen and (max-width: 1080px) {
+    p {
+      max-width: 46vw;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    p {
+      max-width: 100%;
+    }
   }
 </style>
 
-<section class="cv-block cv-contact">
+<h1>Résumé</h1>
+
+<section>
   <h2 style="margin-top: 0">Contact</h2>
   <p class="item">
     <span class="item-title">E-mail</span>

@@ -79,6 +79,11 @@
     color: var(--muted);
     font-weight: 500;
   }
+  .name {
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
   @media screen and (max-width: 740px) {
     .grid {
@@ -99,9 +104,7 @@
 
 <main class="grid">
   <header>
-    <a href={$url('/')}>
-      <h1>Goran Alković</h1>
-    </a>
+    <a class="name" href={$url('/')}> Goran Alković </a>
     <span>Designer & developer</span>
   </header>
 

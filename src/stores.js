@@ -156,10 +156,10 @@ export const work = readable([
                 src: "img/projects/stemGames2019/11.jpg",
                 subHtml: "Signpost<br><br><small>Photo by STEM Games</small>"
             },
-            {
-                src: "img/projects/stemGames2019/5.png",
-                subHtml: "Sports award (glass engraving)"
-            },
+            // {
+            //     src: "img/projects/stemGames2019/5.png",
+            //     subHtml: "Sports award (glass engraving)"
+            // },
             {
                 src: "img/projects/stemGames2019/8.jpg",
                 subHtml: "Sports award (glass engraving)<br><br><small>Photo by STEM Games</small>"
@@ -539,7 +539,7 @@ export const skills = readable(
             shownInQuick: true
         },
         {
-            name: "Dev misc.",
+            name: "Dev — other",
             description: [
                 "I've worked mostly with Microsoft technologies and I can develop <b>UWP</b>, <b>WPF</b> and <b>WinForms</b> apps using <b>C#</b> and <b>XAML</b>. I know some <b>C++</b> and <b>Python</b>.",
                 "I'm comfortable with version control using <b>Git</b> and I've done some <b>basic CI/CD</b> setups.",
@@ -605,12 +605,12 @@ export const certsAndAwards = readable([
     },
     {
         when: "2018",
-        title: "Advanced Python programming workshop @ FOI",
+        title: "Advanced Python workshop @ FOI",
         description: "Completed"
     },
     {
         when: "2018",
-        title: "Game development workshop @ FOI",
+        title: "Game dev workshop @ FOI",
         description: "Completed"
     },
     {
