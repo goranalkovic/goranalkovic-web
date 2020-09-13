@@ -1,7 +1,7 @@
 <script>
   import BaseTransition from "@sveltech/routify/runtime/decorators/BaseTransition.svelte";
 
-  import { scale, fly, fade } from "svelte/transition";
+  import { scale, fly } from "svelte/transition";
 
   let configs = [
     {
@@ -53,8 +53,9 @@
       outParams: { start: 0.8 },
     },
     {
-      condition: (c) => true,
-      transition: fade,
+      // No matching config. We don't want a transition
+      condition: () => true,
+      transition: () => {},
     },
   ];
 </script>

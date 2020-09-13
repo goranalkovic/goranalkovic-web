@@ -1,10 +1,6 @@
 <script>
   import { url, isActive } from "@sveltech/routify";
-  import { fade, slide, fly } from "svelte/transition";
-  import { writable } from "svelte/store";
-  import { TabsTransition } from "@sveltech/routify/decorators";
   import TestTransition from "../components/test-transition.svelte";
-  const width = writable();
 </script>
 
 <style>
@@ -120,10 +116,6 @@
       class:active={$isActive('/projects')}>Projects</a>
     <a href={$url('/work')} class:active={$isActive('/work')}>Work</a>
   </nav>
-
-  <!-- <div class="fullwidth">
-    <slot transition={slide} />
-  </div> -->
 
   <div class="fullwidth">
     <slot decorator={TestTransition} />
