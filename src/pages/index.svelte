@@ -8,10 +8,11 @@
 <style>
   .flex {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto 1fr;
-    grid-template-areas: "work projects about" "cv contact about";
+    grid-template-areas: "about about" "work projects" "cv contact";
     gap: var(--content-padding);
+    margin-top: -2rem;
   }
 
   .flex section {
@@ -24,13 +25,18 @@
     font-family: var(--family-serif);
     font-style: italic;
     max-width: 17ch;
-    font-size: 1.8rem;
+    font-size: min(60vw, 3.6rem);
     line-height: 120%;
   }
 
   .about-me p {
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  .about-me span {
+    /* text-decoration: 6px underline var(--accent) ; */
+    color: var(--accent)
   }
 
   h2 {
@@ -54,8 +60,8 @@
   @media screen and (max-width: 1080px) {
     .flex {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, auto);
-      grid-template-areas: "work about" "projects about" "cv about" "contact about";
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "about about" "work projects" "cv contact";
 
       height: 100%;
     }
@@ -68,6 +74,10 @@
       grid-template-areas: "about" "work" "projects" "cv" "contact";
 
       height: 100%;
+    }
+
+    .about-me {
+      /* text-align: center; */
     }
   }
 </style>
@@ -118,8 +128,9 @@
   </section>
 
   <section class="about-me" style="grid-area: about">
-    <p>I'm a developer and a designer based in Varaždin, Croatia.</p>
-    <p>I love making things that look good and work even better.</p>
+    <p><span>Designer & developer</span> based in Varaždin, Croatia.</p>
+    <!-- <p>I'm a developer and a designer based in Varaždin, Croatia.</p> -->
+    <!-- <p>I love making things that look good and work even better.</p> -->
   </section>
 
   <section style="grid-area: cv">

@@ -9,6 +9,7 @@
   .description {
     font-size: 1.3rem;
     max-width: 32ch;
+    line-height: 1.25;
   }
 
   .flex {
@@ -47,7 +48,7 @@
     }
 
     .description {
-      max-width: 20ch;
+      max-width: 26ch;
     }
   }
 </style>

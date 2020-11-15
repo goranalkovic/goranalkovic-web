@@ -39,11 +39,11 @@ export const projects = readable([
 
 export const work = readable([
     {
-        when: "July 2020 –",
+        when: "July 2020 – November 2020",
         who: "Arbona",
         what: "Digital designer",
-        summary: "I'm working on designing online advertising materials, setting up dynamic ads and great-looking newsletters",
-        featured: false,
+        summary: "I designed online advertising materials, made dynamic Google Display ads and put together great-looking newsletters and Viber marketing campaigns",
+        featured: true,
         slug: "arbona",
         type: "Digital marketing",
         technologies: "Adobe Xd/Ps/Ai, BannerSnack, MailChimp"
@@ -53,7 +53,7 @@ export const work = readable([
         who: "SocialByte",
         what: "Branding and a WordPress website",
         summary: "I designed a logo system for the agency, then set up a WordPress website, customized it, added custom content and did some basic SEO",
-        featured: true,
+        featured: false,
         url: "https://socialbyte.agency/",
         slug: "socialbyte",
         type: "Website, branding",
@@ -441,7 +441,7 @@ export const work = readable([
         slug: "temple-bar"
     },
     {
-        when: "2016 – ",
+        when: "2016 – 2020",
         who: "St@k - FOI student magazine",
         what: "Magazine and promotional materials design, lead designer",
         summary: "Working in a team I improved my coworking skills. Magazine design was done in Adobe InDesign, together with Adobe Photoshop and Adobe Illustrator for supporting materials. Adobe Xd was used for some promotional materials.",
