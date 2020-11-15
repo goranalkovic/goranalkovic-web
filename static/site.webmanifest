@@ -2,9 +2,9 @@
   "background_color": "#ffffff",
   "theme_color": "#1b1a3f",
   "name": "Goran Alković",
-  "short_name": "Routify app",
+  "short_name": "Goran Alković",
   "start_url": "/",
-  "display": "standalone",
+  "display": "browser",
   "icons": [
     {
       "src": "/images/touch-icons/logo-192.png",
