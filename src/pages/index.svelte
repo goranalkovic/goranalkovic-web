@@ -84,9 +84,9 @@
       height: 100%;
     }
 
-    .about-me {
-      /* text-align: center; */
-    }
+    /* .about-me {
+      text-align: center;
+    } */
   }
 </style>
 

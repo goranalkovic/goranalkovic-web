@@ -139,7 +139,7 @@ p.item .item-title {
 .item-description {
 	display: inline-block;
 	max-width: var(--p-max-w);
-	color: var(--muted);
+	color: var(--muted) !important;
 }
 
 .description {
