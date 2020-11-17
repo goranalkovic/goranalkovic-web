@@ -2,13 +2,22 @@
   import { projects } from "../../stores.js";
   import { metatags, url } from "@sveltech/routify";
   metatags.title = "Goran Alković - projects";
-
+  import Icon from '../../components/icon.svelte';
   let restOfImgsVisible = false;
 </script>
 
 <style>
   p.item:not(:last-child) {
     margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 
   .gallery {
@@ -46,6 +55,8 @@
 
 <h1>Projects</h1>
 
+<p class="description">Projects I made with purpose of learning something new (and having fun doing it)</p>
+
 {#each $projects as project, i (i)}
   {#if project.featured == true}
     <p class="item">
@@ -57,6 +68,16 @@
     </p>
   {/if}
 {/each}
+
+<a style="display: inline-flex; align-items: center; justify-content: center;"
+class="button see-more"
+href="https://github.com/goranalkovic"
+rel="noreferrer"
+target="_blank">See more on GitHub
+<Icon
+glyph="link"
+style="opacity: 0.65; margin-left: 5px;"/>
+</a>
 
 <h2>Photography</h2>
 

@@ -1,6 +1,7 @@
 <script>
   import { projects, work, skills } from "../stores.js";
   import { metatags, url } from "@sveltech/routify";
+  import Icon from '../components/icon.svelte';
   metatags.title = "Goran Alković - designer & developer";
   metatags.description = "Personal website of Goran Alković";
 </script>
@@ -25,6 +26,7 @@
     font-family: var(--family-serif);
     font-style: italic;
     max-width: 17ch;
+    font-size: 3rem;
     font-size: min(60vw, 3.6rem);
     line-height: 120%;
   }
@@ -57,6 +59,12 @@
     margin-bottom: 0;
   }
 
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media screen and (max-width: 1080px) {
     .flex {
       grid-template-columns: 1fr 1fr;
@@ -83,7 +91,13 @@
 </style>
 
 <main class="flex">
-  <section style="grid-area: work">
+  <section class="about-me" style="grid-area: about" id="about">
+    <p><span>Designer & developer</span> based in Varaždin, Croatia.</p>
+    <!-- <p>I'm a developer and a designer based in Varaždin, Croatia.</p> -->
+    <!-- <p>I love making things that look good and work even better.</p> -->
+  </section>
+
+  <section style="grid-area: work" id="work">
     <h2>Work</h2>
 
     {#each $work as project, i (i)}
@@ -100,10 +114,16 @@
       {/if}
     {/each}
 
-    <a class="button see-more" href={$url('/work')}>See all work</a>
+    <a class="button see-more" href={$url('/work')}>See all work
+      <Icon
+      glyph="arrow-right"
+      style="opacity: 0.85; margin-left: 5px;"/>
+    </a>
   </section>
 
-  <section style="grid-area: projects">
+
+
+  <section style="grid-area: projects" id="projects">
     <h2>Personal projects</h2>
 
     {#each $projects as project, i (i)}
@@ -120,20 +140,14 @@
       {/if}
     {/each}
 
-    <a
-      class="button see-more"
-      href="https://github.com/goranalkovic"
-      rel="noreferrer"
-      target="_blank">See more on GitHub</a>
+    <a class="button see-more" href={$url('/projects')}>See all projects
+      <Icon
+      glyph="arrow-right"
+      style="opacity: 0.85; margin-left: 5px;"/>
+    </a>
   </section>
 
-  <section class="about-me" style="grid-area: about">
-    <p><span>Designer & developer</span> based in Varaždin, Croatia.</p>
-    <!-- <p>I'm a developer and a designer based in Varaždin, Croatia.</p> -->
-    <!-- <p>I love making things that look good and work even better.</p> -->
-  </section>
-
-  <section style="grid-area: cv">
+  <section style="grid-area: cv" id="cv">
     <h2>Skills TL;DR</h2>
 
     {#each $skills as skill, i (i)}
@@ -147,10 +161,12 @@
       {/if}
     {/each}
 
-    <a class="button see-more" href={$url('/cv')}>Read my CV</a>
+    <a class="button see-more" href={$url('/cv')}>Read my CV  <Icon
+      glyph="arrow-right"
+      style="opacity: 0.85; margin-left: 5px;"/></a>
   </section>
 
-  <section style="grid-area: contact">
+  <section style="grid-area: contact" id="contact">
     <h2>Contact</h2>
 
     <p class="item">
@@ -179,5 +195,10 @@
         <span style="opacity: 0.6">github.com/</span>goranalkovic
       </a>
     </p>
+
+    <a class="button see-more" href="mailto:contact@goranalkovic.com"
+    target="_self"><Icon
+      glyph="email"
+      style="opacity: 0.85; margin-right: 5px;"/> Contact me  </a>
   </section>
 </main>

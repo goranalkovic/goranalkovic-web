@@ -39,14 +39,32 @@ export const projects = readable([
 
 export const work = readable([
     {
-        when: "July 2020 – November 2020",
+        when: "July – November 2020",
         who: "Arbona",
-        what: "Digital designer",
+        what: "Digital design, ad campaing design",
         summary: "I designed online advertising materials, made dynamic Google Display ads and put together great-looking newsletters and Viber marketing campaigns",
         featured: true,
         slug: "arbona",
         type: "Digital marketing",
-        technologies: "Adobe Xd/Ps/Ai, BannerSnack, MailChimp"
+        technologies: "Adobe Xd/Ps/Ai, BannerSnack, MailChimp",
+        images: [
+            {
+                src: "img/projects/arbona/instagram_posts.jpg",
+                subHtml: "Instagram posts"
+            },
+            {
+                src: "img/projects/arbona/facebook_posts.jpg",
+                subHtml: "Facebook posts"
+            },
+            {
+                src: "img/projects/arbona/random_posts.jpg",
+                subHtml: "Designs for blogs, newsletters, etc."
+            },
+            {
+                src: "img/projects/arbona/google_ads.jpg",
+                subHtml: "Google Display ads"
+            }
+        ]
     },
     {
         when: "March - April 2020",
@@ -96,9 +114,9 @@ export const work = readable([
     {
         when: "June - August 2019",
         who: "Ekobit",
-        what: "Summer internship",
+        what: "Summer internship — C#/SQL",
         summary: "I was a part of a team that worked on a company's project, used C# and SQL, learned a lot about optimizing SQL queries",
-        featured: false,
+        featured: true,
         slug: "ekobit",
         type: "Internship",
         technologies: "C#, SQL"
@@ -156,7 +174,7 @@ export const work = readable([
             },
             {
                 src: "img/projects/stemGames2019/11.jpg",
-                subHtml: "Signpost<br><br><small>Photo by STEM Games</small>"
+                subHtml: "Signpost<br><small>Photo by STEM Games</small>"
             },
             // {
             //     src: "img/projects/stemGames2019/5.png",
@@ -164,19 +182,19 @@ export const work = readable([
             // },
             {
                 src: "img/projects/stemGames2019/8.jpg",
-                subHtml: "Sports award (glass engraving)<br><br><small>Photo by STEM Games</small>"
+                subHtml: "Sports award (glass engraving)<br><small>Photo by STEM Games</small>"
             },
             {
                 src: "img/projects/stemGames2019/9.jpg",
-                subHtml: "Banner<br><br><small>Photo by STEM Games</small>"
+                subHtml: "Banner<br><small>Photo by STEM Games</small>"
             },
             {
                 src: "img/projects/stemGames2019/10.jpg",
-                subHtml: "Banner<br><br><small>Photo by STEM Games</small>"
+                subHtml: "Banner<br><small>Photo by STEM Games</small>"
             },
             {
                 src: "img/projects/stemGames2019/12.jpg",
-                subHtml: "Accreditation<br><br><small>Photo by STEM Games</small>"
+                subHtml: "Accreditation<br><small>Photo by STEM Games</small>"
             },
             {
                 src: "img/projects/stemGames2019/14.jpg",
@@ -378,7 +396,7 @@ export const work = readable([
         what: "Student job - grocery store",
         summary: "I worked in the store warehouse, distributed items to their appropriate locations in the store",
         type: "Work",
-        technologies: "-",
+        technologies: "Time management, task optimization",
         slug: "kaufland-vz"
     },
     {
@@ -428,7 +446,7 @@ export const work = readable([
         what: "Part of the Organization team",
         summary: "I worked in the Organization team, supporting all the event activities",
         type: "Teamwork",
-        technologies: "-",
+        technologies: "Teamwork",
         slug: "foi-career-week"
     },
     {
@@ -445,7 +463,7 @@ export const work = readable([
         who: "St@k - FOI student magazine",
         what: "Magazine and promotional materials design, lead designer",
         summary: "Working in a team I improved my coworking skills. Magazine design was done in Adobe InDesign, together with Adobe Photoshop and Adobe Illustrator for supporting materials. Adobe Xd was used for some promotional materials.",
-        featured: true,
+        featured: false,
         url: "https://issuu.com/foi.stak",
         slug: "stak",
         type: "Design, teamwork",
@@ -553,7 +571,7 @@ export const skills = readable(
                 "I'm comfortable with version control using <b>Git</b> and I've done some <b>basic CI/CD</b> setups.",
                 "I worked in a couple of teams using <b>Agile and SCRUM</b> methodologies."
             ],
-            shortDescription: "Microsoft C# - UWP, WPF, WinForms; Git basics, SCRUM, Agile",
+            shortDescription: "Microsoft C# - UWP, WPF, WinForms; Git basics, SQL, SCRUM, Agile",
             shownInQuick: true
         },
         {
