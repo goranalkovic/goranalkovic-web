@@ -28,13 +28,17 @@
 
     mode = "auto";
 
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    try {
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-    mediaQuery.addEventListener("change", () => {
+      mediaQuery.addEventListener("change", () => {
+        autoSwitchTheme(mediaQuery.matches);
+      });
+
       autoSwitchTheme(mediaQuery.matches);
-    });
-
-    autoSwitchTheme(mediaQuery.matches);
+    } catch (error) {
+      removeAutoThemeSwitch();
+    }
   };
 
   const autoSwitchTheme = (matches) => {
@@ -42,12 +46,20 @@
     else document.querySelector("html").classList.remove("dark-theme");
   };
 
+  const removeAutoThemeSwitch = () => {
+    setLight();
+    document.querySelector("#autoThemeSwitch").remove();
+  };
+
   onMount(() => {
-    if (window.matchMedia("(prefers-color-scheme)").media !== "not all") {
-      setAuto();
-    } else {
-      setLight();
-      document.querySelector("#autoThemeSwitch").remove();
+    try {
+      if (window.matchMedia("(prefers-color-scheme)").media !== "not all") {
+        setAuto();
+      } else {
+        removeAutoThemeSwitch();
+      }
+    } catch (error) {
+      removeAutoThemeSwitch();
     }
   });
 </script>
@@ -155,7 +167,8 @@
     border-bottom: 1px solid var(--border-subtle);
   }
 
-  nav a:not(.cta):hover, nav a:not(.cta):focus {
+  nav a:not(.cta):hover,
+  nav a:not(.cta):focus {
     color: var(--text) !important;
     background-color: var(--background);
     border-bottom-color: var(--accent);
@@ -193,12 +206,11 @@
     border-color: var(--on-accent);
   }
 
-
-
-  html.dark-theme nav a.cta:hover, html.dark-theme nav a.cta:focus {
+  html.dark-theme nav a.cta:hover,
+  html.dark-theme nav a.cta:focus {
     background-color: var(--accent) !important;
     border-color: var(--accent) !important;
-    color: var(--on-accent) !important
+    color: var(--on-accent) !important;
   }
 
   /* nav a.active {
@@ -316,20 +328,24 @@
       href={$url('/')}>
       <span class="name">Goran Alković</span>
 
-         
-      <br /><span
-      class="under-name">Designer & developer</span>
-      </a>
+      <br /><span class="under-name">Designer & developer</span>
+    </a>
 
     <nav>
       <!-- <a href={$url('/')} class:active={$isActive('/index')}>Home</a> -->
-      <a onclick="this.blur()"  href={$url('/cv')} class:active={$isActive('/cv')}>CV</a>
-      <a onclick="this.blur()" 
+      <a
+        onclick="this.blur()"
+        href={$url('/cv')}
+        class:active={$isActive('/cv')}>CV</a>
+      <a
+        onclick="this.blur()"
         href={$url('/projects')}
         class:active={$isActive('/projects')}>Projects</a>
-      <a onclick="this.blur()"  href={$url('/work')} class:active={$isActive('/work')}>Work</a> 
+      <a
+        onclick="this.blur()"
+        href={$url('/work')}
+        class:active={$isActive('/work')}>Work</a>
 
-   
       <a
         onclick="this.blur()"
         class="cta"
