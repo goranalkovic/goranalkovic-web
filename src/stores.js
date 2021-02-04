@@ -39,11 +39,21 @@ export const projects = readable([
 
 export const work = readable([
     {
+        when: "January 2021 –",
+        who: "Infinum",
+        what: "WordPress engineer",
+        summary: "Designing custom WordPress themes, blocks and components; working on open-source",
+        featured: true,
+        slug: "infinum",
+        type: "Development",
+        technologies: "PHP, ReactJS, SCSS, Eightshift Boilerplate"
+    },
+    {
         when: "July – November 2020",
         who: "Arbona",
         what: "Digital design, ad campaing design",
         summary: "I designed online advertising materials, made dynamic Google Display ads and put together great-looking newsletters and Viber marketing campaigns",
-        featured: true,
+        featured: false,
         slug: "arbona",
         type: "Digital marketing",
         technologies: "Adobe Xd/Ps/Ai, BannerSnack, MailChimp",
